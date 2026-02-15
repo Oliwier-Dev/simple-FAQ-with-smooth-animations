@@ -1,0 +1,55 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#main {
+    max-width: 500px;
+    margin: auto;
+}
+
+.FAQ-text {
+    display: none;
+    opacity: 0;
+
+    transition: 0.3s ease;
+}
+
+.FAQ-text.active {
+    display: block;
+    
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.6rem;
+    color: black;
+    font-weight: 600;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.btn.active {
+    background-color: black;
+    color: white;
+
+    transition: 0.3s ease;
+}
+
+.FAQ-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
